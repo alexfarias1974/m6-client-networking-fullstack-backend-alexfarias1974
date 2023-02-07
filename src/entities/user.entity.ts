@@ -30,6 +30,6 @@ export class User{
     @CreateDateColumn()
     createdAt: Date
 
-    @OneToMany(() => Contact, contact => contact.user)
+    @OneToMany(() => Contact, (contact) => contact.user)
     contact: Contact[]
 }
