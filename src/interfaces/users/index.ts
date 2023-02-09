@@ -3,7 +3,7 @@ export interface IUserRequest {
     email: string
     tel: string
     password: string
-    isAdm: boolean
+    isAdm?: boolean
 }
 
 export interface IUser {
@@ -11,7 +11,7 @@ export interface IUser {
     name: string
     email: string
     tel: string
-    isAdm: boolean
+    isAdm?: boolean
     isActive: boolean
     createdAt: Date
 }
