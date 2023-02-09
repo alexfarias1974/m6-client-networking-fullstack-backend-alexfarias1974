@@ -30,7 +30,10 @@ const loginUserService = async({email, password}: IUserLogin) => {
             subject: user.id
         }
     )
-    return token;
+    return {
+        token,
+        id: user.id,
+    };
 }
 
 export default loginUserService;
