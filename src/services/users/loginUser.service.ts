@@ -33,6 +33,7 @@ const loginUserService = async({email, password}: IUserLogin) => {
     return {
         token,
         id: user.id,
+        name: user.name
     };
 }
 
