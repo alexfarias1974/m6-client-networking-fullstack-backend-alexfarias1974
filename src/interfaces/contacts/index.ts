@@ -1,9 +1,3 @@
-export interface IContactRequest {
-    name: string
-    email: string
-    tel: string
-}
-
 export interface IContact {
     id: string
     name: string
